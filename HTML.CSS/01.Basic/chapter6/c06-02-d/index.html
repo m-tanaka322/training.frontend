@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>サブナビゲーションのマークアップ例</title>
+	<style>
+		.breadcrumb ol {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.breadcrumb li {
+			display: inline;
+		}
+		.breadcrumb li::after{
+			content: "»";
+			color: #999;
+		}
+		.breadcrumb li:last-child::after {
+			content: none;
+		}
+		.breadcrumb a {
+			text-decoration: none;
+			color: #1864b9;
+		}
+	</style>
+</head>
+<body>
+<div class="breadcrumb">
+	<ol>
+		<li><a href="/">ホーム</a></li>
+		<li><a href="/products/">製品リスト</a></li>
+		<li><a href="/products/lens/">カメラレンズ</a></li>
+		<li>広角レンズ</li>
+	</ol>
+</body>
+</html>
