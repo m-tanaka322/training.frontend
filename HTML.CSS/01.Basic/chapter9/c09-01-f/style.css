@@ -5,7 +5,15 @@ body {
 }
 
 .container {
+	margin: 0 auto 0 auto;
 	padding: 0 16px 0 16px;
+	max-width: 1000px;
+}
+nav {
+	margin-bottom: 20px;
+}
+footer {
+	margin-top: 20px;
 }
 .header-inner {
 	background: #bad7f5;
