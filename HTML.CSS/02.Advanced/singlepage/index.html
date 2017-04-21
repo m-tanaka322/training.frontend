@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>シングルページレイアウト</title>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="title-area">
+			<div class="sub-title">Web designer's portfolio</div>
+			<div class="title">HI, MY NAME IS...</div>
+			<div class="under-text">Check out some of my works.</div>
+		</div>
+		<div class="button-area">
+			<a href=""><input type="button" value="LEARN MORE" class="beige-btn"></a>
+			<a href="#contact"><input type="button" value="SEND MESSAGE" class="orange-btn"></a>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div id="about">
+		<div class="container">
+			<h2>ABOUT ME</h2>
+			<div class="text">
+				<p>
+					はじめまして。日本でWebデザイナーをしています。<br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+				</p>
+				<p>
+					このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="works">
+		<div class="container">
+			<h2>WORKS</h2>
+			<div class="work-area">
+				<div class="work-box">
+					<p>ひとつめの制作事例が入ります。</p>
+					<p>簡単な説明が入ります。</p>
+					<p>使用ツール：XXX, XXX, XXX</p>
+					<a href="#"><input type="button" value="READ MORE"></a>
+				</div>
+				<img src="images/building.jpg" alt="" >
+				<div class="work-box">
+					<p>ふたつめの制作事例が入ります。</p>
+					<p>簡単な説明が入ります。</p>
+					<p>使用ツール：XXX, XXX, XXX</p>
+					<a href="#"><input type="button" value="READ MORE"></a>
+				</div>
+				<img src="images/sky.jpg" alt="" >
+				<div class="work-box">
+					<p>みっつめの制作事例が入ります。</p>
+					<p>簡単な説明が入ります。</p>
+					<p>使用ツール：XXX, XXX, XXX</p>
+					<a href="#"><input type="button" value="READ MORE"></a>
+				</div>
+				<img src="images/tree.jpg" alt="" >
+				<div class="work-box">
+					<p>よっつめの制作事例が入ります。</p>
+					<p>簡単な説明が入ります。</p>
+					<p>使用ツール：XXX, XXX, XXX</p>
+					<a href="#"><input type="button" value="READ MORE"></a>
+				</div>
+				<img src="images/lake.jpg" alt="" >
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="my-skills">
+		<div class="container">
+			<h2>MY SKILLS</h2>
+			<div class="skill-area">
+				<div class="skil-box">
+					<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+					<div class="skill-title">IDEA</div>
+					<p>何かを考えることが好きです。</p>
+					<p>新しいことを思いついては試しています。</p>
+					<p>ディレクションの経験もあります。</p>
+				</div>
+			</div>
+			<div class="skill-area">
+				<div class="skil-box">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+					<div class="skill-title">DESIGN</div>
+					<p>見た目の綺麗さだけじゃなくて、</p>
+					<p>使いやすさ、情報の伝わりやすさなど、</p>
+					<p>その先まで考えることを意識しています。</p>
+				</div>
+			</div>
+			<div class="skill-area">
+				<div class="skil-box">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					<div class="skill-title">IDEA</div>
+					<p>HTML/CSSコーディングも行います。</p>
+					<p>正しく美しいマークアップと、</p>
+					<p>今後の変更への強さを考慮しています。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="contact">
+		<div class="container">
+			<h2>CONTACT</h2>
+		</div>
+		<form action="#" method="POST" id="contact">
+			<p><input type="text" name="name" id="name-field" placeholder="NAME"></p>
+			<p><input type="comment" name="message" id="message-field" placeholder="MESSAGE"></p>
+			<p><input type="submit" value="SEND" id="submit" name="submit"></p>
+		</form>
+	</div>
+</section>
+
+<footer>
+	<p>&copy; sample site</p>
+</footer>
+</body>
+</html>
