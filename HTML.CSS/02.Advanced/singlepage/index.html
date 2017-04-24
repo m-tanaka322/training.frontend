@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<title>シングルページレイアウト</title>
+</head>
+<body>
+<header class="top-header">
+	<p class="head-sub-title">Web designer's portfolio</p>
+	<h1 class="head-title">HI, MY NAME IS...</h1>
+	<p class="head-under-text">Check out some of my works.</p>
+	<div class="button-area">
+		<a class="beige-btn button" href="#about">LEARN MORE</a><a class="orange-btn button" href="#contact">SEND MESSAGE</a>
+	</div>
+</header>
+
+<section id="about" class="site-about container">
+	<header>
+		<h2 class="section-title">ABOUT ME</h2>
+	</header>
+	<div class="about-body">
+		<p>
+			はじめまして。日本でWebデザイナーをしています。<br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+		</p>
+		<p>
+			このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+		</p>
+	</div>
+</section>
+
+<section class="works container">
+	<header>
+		<h2 class="section-title">WORKS</h2>
+	</header>
+	<ul class="work-body">
+		<li class="work-box">
+			<div class="work-img-bg">
+				<img src="images/tree.jpg" alt="">
+				<div class="work-content">
+					<p>
+						ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+						<a href="#" class="work-btn button">READ MORE</a>
+					</p>
+				</div>
+			</div>
+			<img src="images/tree.jpg" alt="" >
+		</li>
+		<li class="work-box">
+			<img src="images/building.jpg" alt="" >
+			<div class="work-img-bg">
+				<img src="images/building.jpg" alt="">
+				<div class="work-content">
+					<p>
+						ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+						<a href="#" class="work-btn button">READ MORE</a>
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="work-box">
+			<div class="work-img-bg">
+				<img src="images/lake.jpg" alt="">
+				<div class="work-content">
+					<p>
+						みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+						<a href="#" class="work-btn button">READ MORE</a>
+					</p>
+				</div>
+			</div>
+			<img src="images/lake.jpg" alt="" >
+		</li>
+		<li class="work-box">
+			<img src="images/sky.jpg" alt="" >
+			<div class="work-img-bg">
+				<img src="images/sky.jpg" alt="">
+				<div class="work-content">
+					<p>
+						よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+						<a href="#" class="work-btn button">READ MORE</a>
+					</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section class="my-skills container">
+	<header>
+		<h2 class="section-title">MY SKILLS</h2>
+	</header>
+	<ul class="skills-body">
+		<li class="skill-box">
+			<i class="skill-icon fa fa-lightbulb-o" aria-hidden="true"></i>
+			<h3 class="skill-title">IDEA</h3>
+			<p>何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
+		</li>
+		<li class="skill-box">
+			<i class="skill-icon fa fa-paint-brush" aria-hidden="true"></i>
+			<h3 class="skill-title">DESIGN</h3>
+			<p>見た目の綺麗さだけじゃなくて、<br>使いやすさ、情報の伝わりやすさなど、<br>
+			その先まで考えること</p>
+		</li>
+		<li class="skill-box">
+			<i class="skill-icon fa fa-code" aria-hidden="true"></i>
+			<h3 class="skill-title">IDEA</h3>
+			<p>HTML/CSSコーディングも行います。</p>
+			<p>正しく美しいマークアップと、</p>
+			<p>今後の変更への強さを考慮しています。</p>
+		</li>
+	</ul>
+</section>
+
+<section id="contact" class="site-contact container">
+	<header>
+		<h2 class="section-title">CONTACT</h2>
+	</header>
+	<div class="form-body">
+		<form action="#" method="POST" class="contact-form">
+			<input type="text" name="name" class="name-field" placeholder="NAME">
+			<textarea name="message" class="message-field" placeholder="MESSAGE"></textarea>
+			<input type="submit" value="SEND" id="submit" name="submit" class="button form-send-button">
+		</form>
+	</div>
+</section>
+
+<footer>
+	<p><small>&copy; sample site</small></p>
+</footer>
+</body>
+</html>
