@@ -90,6 +90,23 @@ body {
 	background-color: #D29E04;
 }
 
+@media screen and (max-width:768px){
+	.top-header {
+		padding-top: 60px;
+	}
+	.head-title {
+		margin-top: 35px;
+		font-size: 5rem;
+	}
+	.head-sub-title {
+		font-size: 1.7rem;
+	}
+	.head-sub-title:before, .head-sub-title:after {
+		display: block;
+		width: 80%;
+		margin: 10px auto;
+	}
+}
 /*---------------------------------------------------------------------
  ABOUT
 ----------------------------------------------------------------------*/
@@ -158,6 +175,40 @@ body {
 	vertical-align: bottom;
 }
 
+@media screen and (max-width:768px){
+	.work-body{
+		flex-flow: column;
+	}
+	.work-body{
+		flex-flow: column;
+	}
+	.work-content {
+		position: relative;
+    	transform: scale(1, 1);
+	}
+	.work-bg-tree {
+		background: url("../images/tree.jpg");
+	}
+	.work-bg-building {
+		background: url("../images/building.jpg");
+	}
+	.work-bg-sky {
+		background: url("../images/sky.jpg");
+	}
+	.work-bg-lake {
+		background: url("../images/lake.jpg");
+	}
+	.work-bg-tree, .work-bg-building, .work-bg-sky, .work-bg-lake{
+		background-size: cover;
+	}
+	.work-box img{
+		display: none;
+	}
+	.work-img-bg {
+    	transform: scale(1, 1);
+	}
+}
+
 /*---------------------------------------------------------------------
  MY SKILLS
 ----------------------------------------------------------------------*/
@@ -193,6 +244,15 @@ body {
 	line-height: 2;
 }
 
+@media screen and (max-width:768px){
+	.skills-body {
+		flex-flow: column;
+	}
+	.skill-box {
+		margin: 40px auto;
+	}
+}
+
 /*---------------------------------------------------------------------
  CONTACT
 ----------------------------------------------------------------------*/
@@ -222,4 +282,10 @@ body {
 }
 .form-send-button:hover{
 	background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (max-width:768px){
+	.contact-form {
+		width: 80%;
+	}
 }
