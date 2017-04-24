@@ -13,6 +13,11 @@ body {
 	font-size: 1.4rem;
 	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+@media screen and (max-width:768px){
+	body{
+		background-image: none;
+	}
+}
 
 .section-title {
 	position: relative;
