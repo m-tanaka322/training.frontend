@@ -18,6 +18,11 @@ body {
 		background-image: none;
 	}
 }
+@media screen and (max-width: 1024px){
+	body {
+    	background-image: none;
+    }
+}
 
 .section-title {
 	position: relative;
@@ -53,14 +58,14 @@ body {
 	letter-spacing: 1px;
 	font-size: 1.2rem;
 }
-.button::hover {
+.button:hover {
 	opacity: 0.8;
 }
 
 /*---------------------------------------------------------------------
  HEADER
  ---------------------------------------------------------------------*/
-.top-header {
+.site-header {
 	padding: 170px 30px 80px;
 }
 .head-title {
@@ -96,7 +101,7 @@ body {
 }
 
 @media screen and (max-width:768px){
-	.top-header {
+	.site-header {
 		padding-top: 60px;
 	}
 	.head-title {
@@ -151,6 +156,7 @@ body {
 .work-btn {
 	width: 60%;
 	margin-top: 20px;
+	margin-bottom: 0;
 	padding: 3px;
 	border: 1px solid #FFFFFF;
 	background-color: rgba(255, 255, 255, 0.15);
@@ -158,19 +164,25 @@ body {
 .work-content {
 	position: absolute;
 	top: 0;
-	overflow: scroll;
+	overflow-y: auto;
 	width: 100%;
 	padding: 20px;
-	vertical-align: middle;
 	font-size: 1.2rem;
 	line-height: 2;
 	background-color: rgba(56,54,52,0.8);
     transform: scale(1, -1);
     height: 100%;
 }
+.work-content::-webkit-scrollbar {
+  display: none;
+}
 .work-content p{
-	display: inline;
-    vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 0 20px;
+	transform: translate(-50%, -50%);
     font-size: 1.2rem;
     line-height: 2;
 }
@@ -237,11 +249,17 @@ body {
 	color: #F1B400;
 	line-height: 142px;
 	font-size: 8rem;
-	box-sizing: content-box;
+	box-sizing: border-box;
+}
+.skill-box {
+	width: 100%;
 }
 .skill-title {
 	margin: 0 20px 20px;
 	font-size: 2rem;
+}
+.fa-code:before: {
+	box-sizing: border-box;
 }
 .skill-box p {
 	flex: 1;
@@ -261,6 +279,9 @@ body {
 /*---------------------------------------------------------------------
  CONTACT
 ----------------------------------------------------------------------*/
+#contact {
+	padding: 80px 0 150px;
+}
 .contact-form {
 	width: 50%;
 	margin: 50px auto 0;
@@ -271,19 +292,24 @@ body {
 	width: 100%;
 	padding: 15px;
 	margin-bottom: 10px;
+	font: inherit;
 	box-sizing: border-box;
+	display: block;
 }
 .message-field {
 	height: 150px;
 }
 .form-send-button {
+	font: inherit;
 	display: block;
 	width: 200px;
 	margin: 40px auto 0;
 	padding: 15px;
 	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 	cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: initial;
 }
 .form-send-button:hover{
 	background-color: rgba(255, 255, 255, 0.05);
@@ -293,4 +319,16 @@ body {
 	.contact-form {
 		width: 80%;
 	}
+}
+
+/*---------------------------------------------------------------------
+ FOOTER
+----------------------------------------------------------------------*/
+.site-footer{
+    padding: 12px 0;
+    font-size: 1.3rem;
+    display: block;
+}
+.site-footer small{
+    font-size: 1.3rem;
 }
