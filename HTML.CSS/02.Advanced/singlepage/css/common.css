@@ -45,10 +45,10 @@ body {
 .section-title::before {
 	bottom: 5px;
 }
-.container {
+.section-container {
 	padding: 80px 0px;
 }
-.button {
+.set-button {
 	margin: 10px;
 	display: inline-block;
 	width: 200px;
@@ -100,10 +100,10 @@ body {
 	color: #888888;
 	font-size: 1.6rem;
 }
-.beige-btn {
+.send-button {
 	background-color: #AFA58D;
 }
-.orange-btn {
+.learn-button {
 	background-color: #D29E04;
 }
 
@@ -164,7 +164,7 @@ body {
 	height: auto;
 	vertical-align: bottom;
 }
-.work-btn {
+.work-button {
 	width: 60%;
 	margin-top: 20px;
 	margin-bottom: 0;
@@ -200,7 +200,6 @@ body {
 .work-img-bg {
     transform: scale(1, -1);
     position: relative;
-	vertical-align: bottom;
 }
 
 @media screen and (max-width:768px){
@@ -239,7 +238,7 @@ body {
 /*---------------------------------------------------------------------
  MY SKILLS
 ----------------------------------------------------------------------*/
-.my-skills {
+.site-my-skills {
 	background-color: #FFFFFF;
 	color: #333333;
 }
@@ -296,9 +295,8 @@ body {
 /*---------------------------------------------------------------------
  CONTACT
 ----------------------------------------------------------------------*/
-#contact {
+.site-contact {
 	padding: 80px 0 150px;
-	padding-bottom: 80px;
 }
 .contact-form {
 	width: 50%;
@@ -334,6 +332,9 @@ body {
 }
 
 @media screen and (max-width:768px){
+	.site-contact {
+		padding-bottom: 80px;
+	}
 	.contact-form {
 		width: 80%;
 	}
