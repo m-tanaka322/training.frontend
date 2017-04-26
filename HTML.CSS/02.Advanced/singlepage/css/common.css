@@ -48,7 +48,7 @@ body {
 .section-container {
 	padding: 80px 0px;
 }
-.set-button {
+.common-button {
 	margin: 10px;
 	display: inline-block;
 	width: 200px;
@@ -59,7 +59,7 @@ body {
 	letter-spacing: 1px;
 	font-size: 1.2rem;
 }
-.button:hover {
+.common-button:hover {
 	opacity: 0.8;
 }
 
@@ -72,7 +72,7 @@ body {
 /*---------------------------------------------------------------------
  HEADER
  ---------------------------------------------------------------------*/
-.site-header {
+.section-header {
 	padding: 170px 30px 80px;
 }
 .head-title {
@@ -108,7 +108,7 @@ body {
 }
 
 @media screen and (max-width:768px){
-	.site-header {
+	.section-header {
 		padding-top: 60px;
 	}
 	.head-title {
@@ -127,29 +127,29 @@ body {
 /*---------------------------------------------------------------------
  ABOUT
 ----------------------------------------------------------------------*/
-.site-about {
+.section-about {
 	padding-left: 30px;
 	padding-right: 30px;
 	background-color: #FFFFFF;
 	color: #333333;
 }
-.about-body p{
+.about-area p{
 	margin: 30px 0;
 	line-height: 2.5;
 }
 @media screen and (max-width:768px){
-	.about-body p{
+	.about-area p{
 		line-height: 1.8;
 	}
 }
 /*---------------------------------------------------------------------
  WORKS
 ----------------------------------------------------------------------*/
-.works {
+.section-works {
 	background-color: #383634;
 	padding: 80px 0;
 }
-.work-body {
+.work-area {
 	width: 100%;
 	margin-top: 60px;
 	display: flex;
@@ -187,7 +187,7 @@ body {
 .work-content::-webkit-scrollbar {
   display: none;
 }
-.work-content p{
+.work-content p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -203,13 +203,13 @@ body {
 }
 
 @media screen and (max-width:768px){
-	.work-body{
+	.work-area{
 		flex-flow: column;
 	}
 	.work-content {
 		position: relative;
 	}
-	.work-content p{
+	.work-content p {
 		position: relative;
 		transform: translate(0,0);
 		left: auto;
@@ -238,11 +238,11 @@ body {
 /*---------------------------------------------------------------------
  MY SKILLS
 ----------------------------------------------------------------------*/
-.site-my-skills {
+.section-my-skills {
 	background-color: #FFFFFF;
 	color: #333333;
 }
-.skills-body {
+.skills-area {
 	display: flex;
 	flex-flow: row;
 	width: 80%;
@@ -278,7 +278,7 @@ body {
 }
 
 @media screen and (max-width:768px){
-	.skills-body {
+	.skills-area {
 		display: block;
 		}
 	.skill-box {
@@ -295,7 +295,7 @@ body {
 /*---------------------------------------------------------------------
  CONTACT
 ----------------------------------------------------------------------*/
-.site-contact {
+.section-contact {
 	padding: 80px 0 150px;
 }
 .contact-form {
@@ -332,7 +332,7 @@ body {
 }
 
 @media screen and (max-width:768px){
-	.site-contact {
+	.section-contact {
 		padding-bottom: 80px;
 	}
 	.contact-form {
@@ -343,11 +343,11 @@ body {
 /*---------------------------------------------------------------------
  FOOTER
 ----------------------------------------------------------------------*/
-.site-footer{
+.section-footer{
     padding: 12px 0;
     font-size: 1.3rem;
     display: block;
 }
-.site-footer small{
+.section-footer small{
     font-size: 1.3rem;
 }

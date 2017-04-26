@@ -10,21 +10,21 @@
 	<title>シングルページレイアウト</title>
 </head>
 <body>
-<header class="site-header">
+<header class="section-header">
 	<p class="head-sub-title">Web designer's portfolio</p>
 	<h1 class="head-title">HI, MY NAME IS...</h1>
 	<p class="head-under-text">Check out some of my works.</p>
 	<div class="button-area">
-		<a class="learn-button set-button" href="#site-about">LEARN MORE</a>
-		<a class="send-button set-button" href="#site-contact">SEND MESSAGE</a>
+		<a class="learn-button common-button" href="#section-about">LEARN MORE</a>
+		<a class="send-button common-button" href="#section-contact">SEND MESSAGE</a>
 	</div>
 </header>
 
-<section id="site-about" class="site-about section-container">
+<section id="section-about" class="section-about section-container">
 	<header>
 		<h2 class="section-title">ABOUT ME</h2>
 	</header>
-	<div class="about-body">
+	<div class="about-area">
 		<p>
 			はじめまして。日本でWebデザイナーをしています。<br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
 		</p>
@@ -34,18 +34,18 @@
 	</div>
 </section>
 
-<section class="site-works section-container">
+<section class="section-works section-container">
 	<header>
 		<h2 class="section-title">WORKS</h2>
 	</header>
-	<ul class="work-body">
+	<ul class="work-area">
 		<li class="work-box">
 			<div class="work-img-bg work-bg-tree">
 				<img src="images/tree.jpg" alt="">
 				<div class="work-content">
 					<p>
 						ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
-						<a href="#" class="work-button set-button">READ MORE</a>
+						<a href="#" class="work-button common-button">READ MORE</a>
 					</p>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 					<div class="work-content">
 						<p>
 							ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
-							<a href="#" class="work-button set-button">READ MORE</a>
+							<a href="#" class="work-button common-button">READ MORE</a>
 						</p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 				<div class="work-content">
 					<p>
 						みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
-						<a href="#" class="work-button set-button">READ MORE</a>
+						<a href="#" class="work-button common-button">READ MORE</a>
 					</p>
 				</div>
 			</div>
@@ -83,7 +83,7 @@
 				<div class="work-content">
 					<p>
 						よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
-						<a href="#" class="work-button set-button">READ MORE</a>
+						<a href="#" class="work-button common-button">READ MORE</a>
 					</p>
 				</div>
 			</div>
@@ -91,11 +91,11 @@
 	</ul>
 </section>
 
-<section class="site-my-skills section-container">
+<section class="section-my-skills section-container">
 	<header>
 		<h2 class="section-title">MY SKILLS</h2>
 	</header>
-	<ul class="skills-body">
+	<ul class="skills-area">
 		<li class="skill-box">
 			<i class="skill-icon fa fa-lightbulb-o" aria-hidden="true"></i>
 			<h3 class="skill-title">IDEA</h3>
@@ -117,20 +117,20 @@
 	</ul>
 </section>
 
-<section id="site-contact" class="site-contact section-container">
+<section id="section-contact" class="section-contact section-container">
 	<header>
 		<h2 class="section-title">CONTACT</h2>
 	</header>
-	<div class="form-body">
+	<div class="form-area">
 		<form action="#" method="POST" class="contact-form">
 			<input type="text" name="name" class="name-field" placeholder="NAME">
 			<textarea name="message" class="message-field" placeholder="MESSAGE"></textarea>
-			<input type="submit" value="SEND" id="submit" name="submit" class="set-button form-send-button">
+			<input type="submit" value="SEND" id="submit" name="submit" class="common-button form-send-button">
 		</form>
 	</div>
 </section>
 
-<footer class="site-footer">
+<footer class="section-footer">
 	<small>&copy; sample site</small>
 </footer>
 </body>
