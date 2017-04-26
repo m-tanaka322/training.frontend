@@ -101,10 +101,10 @@ body {
 	font-size: 1.6rem;
 }
 .send-button {
-	background-color: #AFA58D;
+	background-color: #D29E04;
 }
 .learn-button {
-	background-color: #D29E04;
+	background-color: #AFA58D;
 }
 
 @media screen and (max-width:768px){
