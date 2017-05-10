@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+body {
+	background: #151515 url(../images/bg.png) no-repeat fixed left bottom;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+@media screen and (max-width:768px){
+	body{
+		background-image: none;
+		font-size: 1.3rem;
+	}
+}
+@media screen and (max-width: 1024px){
+	body {
+    	background-image: none;
+    }
+}
+
+.section-title {
+	position: relative;
+	display: inline-block;
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	font-size: 4rem;
+	font-weight: bold;
+}
+.section-title::before, .section-title::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #999999;
+}
+.section-title::before {
+	bottom: 5px;
+}
+.section-container {
+	padding: 80px 0px;
+}
+.common-button {
+	margin: 10px;
+	display: inline-block;
+	width: 200px;
+	padding: 20px;
+	border-radius: 4px;
+	color: #FFFFFF;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+}
+.common-button:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width:768px){
+	.section-title{
+		margin-top: 20px;
+		font-size: 2.5rem;
+	}
+}
+/*---------------------------------------------------------------------
+ HEADER
+ ---------------------------------------------------------------------*/
+.section-header {
+	padding: 170px 30px 80px;
+}
+.head-title {
+	margin: 50px 0 40px;
+	font-size: 7.6rem;
+	font-weight: bold;
+}
+.head-sub-title {
+	margin: 0 0 30px;
+	letter-spacing: 1px;
+	font-size: 2.2rem;
+	font-weight: normal;
+}
+.head-sub-title:before, .head-sub-title:after {
+	content: '';
+	display: inline-block;
+	width: 140px;
+	height: 2px;
+	margin: 0 30px;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+}
+.head-under-text {
+	margin-bottom: 50px;
+	color: #888888;
+	font-size: 1.6rem;
+}
+.send-button {
+	background-color: #D29E04;
+}
+.learn-button {
+	background-color: #AFA58D;
+}
+
+@media screen and (max-width:768px){
+	.section-header {
+		padding-top: 60px;
+	}
+	.head-title {
+		margin-top: 35px;
+		font-size: 5rem;
+	}
+	.head-sub-title {
+		font-size: 1.7rem;
+	}
+	.head-sub-title:before, .head-sub-title:after {
+		display: block;
+		width: 80%;
+		margin: 10px auto;
+	}
+}
+/*---------------------------------------------------------------------
+ ABOUT
+----------------------------------------------------------------------*/
+.section-about {
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+.about-area p{
+	margin: 30px 0;
+	line-height: 2.5;
+}
+@media screen and (max-width:768px){
+	.about-area p{
+		line-height: 1.8;
+	}
+}
+/*---------------------------------------------------------------------
+ WORKS
+----------------------------------------------------------------------*/
+.section-works {
+	background-color: #383634;
+	padding: 80px 0;
+}
+.work-area {
+	width: 100%;
+	margin-top: 60px;
+	display: flex;
+	flex-flow: row;
+}
+.work-box {
+	background-size: contain;
+    width: 100%;
+}
+.work-box img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+.work-button {
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding: 3px;
+	border: 1px solid #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+.work-content {
+	position: absolute;
+	top: 0;
+	overflow-y: auto;
+	width: 100%;
+	padding: 20px;
+	font-size: 1.2rem;
+	line-height: 2;
+	background-color: rgba(56,54,52,0.8);
+    transform: scale(1, -1);
+    height: 100%;
+}
+.work-content::-webkit-scrollbar {
+  display: none;
+}
+.work-content p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 0 20px;
+	transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.work-img-bg {
+    transform: scale(1, -1);
+    position: relative;
+}
+
+@media screen and (max-width:768px){
+	.work-area{
+		flex-flow: column;
+	}
+	.work-content {
+		position: relative;
+	}
+	.work-content p {
+		position: relative;
+		transform: translate(0,0);
+		left: auto;
+		padding: 0;
+	}
+	.work-bg-tree {
+		background: url("../images/tree.jpg");
+	}
+	.work-bg-building {
+		background: url("../images/building.jpg");
+	}
+	.work-bg-sky {
+		background: url("../images/sky.jpg");
+	}
+	.work-bg-lake {
+		background: url("../images/lake.jpg");
+	}
+	.work-bg-tree, .work-bg-building, .work-bg-sky, .work-bg-lake{
+		background-size: cover;
+	}
+	.work-box img{
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+ MY SKILLS
+----------------------------------------------------------------------*/
+.section-my-skills {
+	background-color: #FFFFFF;
+	color: #333333;
+}
+.skills-area {
+	display: flex;
+	flex-flow: row;
+	width: 80%;
+	margin: 50px auto 0;
+	justify-content: space-around;
+}
+.skill-icon {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+	border: 4px solid;
+	border-radius: 50%;
+	color: #F1B400;
+	line-height: 142px;
+	font-size: 8rem;
+	box-sizing: border-box;
+}
+.skill-box {
+	width: 100%;
+	display: block;
+}
+.skill-title {
+	margin: 0 20px 20px;
+	font-size: 2rem;
+}
+.fa-code:before: {
+	box-sizing: border-box;
+}
+.skill-box p {
+	flex: 1;
+	margin: 0 20px;
+	line-height: 2;
+}
+
+@media screen and (max-width:768px){
+	.skills-area {
+		display: block;
+		}
+	.skill-box {
+		margin: 40px auto;
+	}
+	.skill-icon {
+		width: 100px;
+		height: 100px;
+		font-size: 5rem;
+		line-height: 92px;
+	}
+}
+
+/*---------------------------------------------------------------------
+ CONTACT
+----------------------------------------------------------------------*/
+.section-contact {
+	padding: 80px 0 150px;
+}
+.contact-form {
+	width: 50%;
+	margin: 50px auto 0;
+}
+.name-field, .message-field {
+	border: 1px solid rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.05);
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	font: inherit;
+	box-sizing: border-box;
+	display: block;
+}
+.message-field {
+	height: 150px;
+}
+.form-send-button {
+	font: inherit;
+	display: block;
+	width: 200px;
+	margin: 40px auto 0;
+	padding: 15px;
+	background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: initial;
+}
+.form-send-button:hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (max-width:768px){
+	.section-contact {
+		padding-bottom: 80px;
+	}
+	.contact-form {
+		width: 80%;
+	}
+}
+
+/*---------------------------------------------------------------------
+ FOOTER
+----------------------------------------------------------------------*/
+.section-footer{
+    padding: 12px 0;
+    font-size: 1.3rem;
+    display: block;
+}
+.section-footer small{
+    font-size: 1.3rem;
+}
