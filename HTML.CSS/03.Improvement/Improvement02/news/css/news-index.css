@@ -24,8 +24,12 @@
 	min-width: 1000px;
 	margin: 0 auto;
 }
+#top_news h2 img{
+	width: 135;
+	height: 50;
+}
 #top_news .list-outer {
-	width: 1000px;
+	width: 1341px;
 	margin: 0 auto;
 	padding-bottom: 110px;
 }
